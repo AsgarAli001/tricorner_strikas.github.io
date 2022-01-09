@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;500;600;700;800&display=swap');
+
+
+/* header section starts */
+
+header .header-middle a .logo-img {
+    height: 120px;
+}
+
+header .header-middle .header-middle-button {
+    background: none;
+    border: none;
+    margin-top: 2em;
+    text-align: center;
+}
+
+header .header-middle .header-middle-button a {
+    position: relative;
+    display: block;
+    width: 225px;
+    height: 50px;
+    border: 2px solid #f6f6f6;
+    border-radius: 30px;
+    color: #26272b;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 46px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+header .header-middle .header-middle-button a:hover {
+    transition: all 1s ease;
+    background-color: #1E5128;
+    color: #fff;
+}
+
+header .header-middle .header-middle-button a i {
+    font-size: 14px;
+}
+
+header .header-middle .header-middle-button a:hover i {
+    transition: all 2s ease;
+    background-color: #1E5128;
+    color: #fff;
+}
+
+header .header-bottom{
+    background-color: #1E5128;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+header .header-bottom ul .nav-item .nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 1em;
+}
+
+/* header section ends */
+
+/* about us section */
+
+.about-us{
+    padding: 3em 0;
+}
+
+.title{
+    text-align: center;
+}
+.title h2{
+    text-transform: uppercase;
+    font-family: 'Hepta Slab', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.about-us .about-us-text .title{
+    margin-bottom: 1em;
+}
+
+.about-us .about-us-text p{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.about-us .about-us-img {
+    width: 100%;
+}
+
+/* about us ends */
+
+
+/* our team section starts */
+
+
+.our-team{
+    padding: 2em 0;
+}
+
+.our-team   .card .card-text .stats .table{
+    display: table;
+    text-align: center;
+    margin: 0;
+}
+
+.our-team   .card .card-text .stats span{
+    display: block;
+    text-align: center;
+}
+
+.our-team  .card .card-text  span {
+    display: block;
+    text-align: center;
+}
+
+.our-team  .card{
+    position: relative;
+    /* z-index: -1; */
+}
+
+.our-team  .card .card-text {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+}
+
+.our-team  .card .card-text .player-name span {
+    color: #7100ed;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.our-team  .card .card-text .player-position span {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.our-team  .card .card-text .stats .table {
+    font-size: 19px;
+    padding-left: 0px;
+    font-weight: 700;
+}
+
+.our-team  .card .card-text .stats .stat-number {
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+}
+/* 
+.our-team .our-team-carousel .item .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 250px;
+    opacity: 0;
+} */
+    
+.our-team  .card:hover .card-text {
+        opacity: 1;
+        /* z-index: 2; */
+        
+        animation: moveInTop .5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        
+}
+
+
+.our-team  .card .card-text {
+    position: absolute;
+    top: 335px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    background: #00000060;
+    padding: 12px 0;
+}
+
+@keyframes moveInTop {
+    0%{
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    /* 50%{
+        opacity: 0.5;
+    }
+
+    80%{
+        opacity: 0.8;
+    } */
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+    
+.our-team  .card .card-text .stats .table {
+    font-size: 19px;
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+.our-team  .card .card-text .player-name span {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: -7px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.our-team  .card .card-text .player-position span {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: -4px;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.our-team  .card .card-text .stats .table {
+    font-size: 19px;
+    padding-left: 5px;
+    font-weight: 700;
+    color: #fff700bf;
+    text-transform: uppercase;
+}
+
+
+
+.our-team  .card .card-text {
+    position: absolute;
+    top: 335px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    /* background: #00000060; */
+    padding: 1.3em 0;
+    padding-bottom: 25px;
+    background: linear-gradient(
+    270deg, #00000050, #000000a6);
+}
+
+.our-team  .card img{
+    height: 480px;
+}
+
+.our-team .title {
+    margin-bottom: 2em;
+}
+
+.our-team  .card .card-text .stats .table {
+    font-size: 16px;
+    padding-left: 2px;
+    font-weight: 700;
+    color: #fff700bf;
+    text-transform: uppercase;
+}
+
+.our-team  .card .card-text .stats .stat-number {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.our-team  .card .card-text .stats {
+    margin-top: 1em;
+}
+
+.our-team  .card{
+    margin-bottom: 2em;
+}
+
+.our-team .card .card-text {
+    position: absolute;
+    top: 323px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    /* background: #00000060; */
+    padding: 1.3em 0;
+    padding-bottom: 25px;
+    background: linear-gradient( 
+270deg, #00000050, #000000a6);
+}
+
+.our-team{
+    padding-bottom: 3em;
+}
+
+
+/* our team section ends */
+
+/* training section starts */
+
+.training-section .train-img{
+    width: 100%;
+    height: 400px;
+}
+
+.training-section .button-training {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.training-section  .button-training button {
+    background: none;
+    border: none;
+}
+
+
+@keyframes moveUpTop {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.training-section  .button-training button .btn-control-train:link ,
+.training-section  .button-training button .btn-control-train:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 1s;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.training-section  .button-training button .btn-control-train:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.training-section  .button-training button .btn-control-train:active{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.training-section  .button-training button .btn-control-train{
+    background-color: rgb(30 81 40);
+    color: #fff;
+    /* animation: moveUpTop 3s ease-in-out; */
+    /* backface-visibility: hidden; */
+}
+
+
+.training-section  .button-training button .btn-control-train::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.training-section  .button-training button .btn-control-train::after{
+    background-color: rgb(30 81 40);
+}
+
+.training-section  .button-training button .btn-control-train:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.training-section  .button-training button .btn-control-train{
+    animation: moveUpTop .5s ease-in-out .75s;
+    animation-fill-mode: backwards;
+}
+
+
+ .button-training {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+  .button-training button {
+    background: none;
+    border: none;
+}
+
+
+@keyframes moveUpTop {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+  .button-training button .btn-control-train:link ,
+  .button-training button .btn-control-train:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 1s;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+}
+
+  .button-training button .btn-control-train:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+  .button-training button .btn-control-train:active{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+  .button-training button .btn-control-train{
+    background-color: rgb(30 81 40);
+    color: #fff;
+    /* animation: moveUpTop 3s ease-in-out; */
+    /* backface-visibility: hidden; */
+}
+
+
+  .button-training button .btn-control-train::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+
+  .button-training button .btn-control-train::after{
+    background-color: rgb(30 81 40);
+}
+
+  .button-training button .btn-control-train:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+  .button-training button .btn-control-train{
+    animation: moveUpTop .5s ease-in-out .75s;
+    animation-fill-mode: backwards;
+}
+
+
+/* breadcrumb section */
+
+.breadcrumb-section {
+    height: 45vh;
+    background-image: linear-gradient(to right bottom , rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) , 
+                      url(../images/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* deteriorate */
